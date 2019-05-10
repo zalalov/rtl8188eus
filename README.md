@@ -69,3 +69,21 @@ unmanaged-devices=mac:A7:A7:A7:A7:A7
 * Remove unused functions
 <br>
 more tba..
+
+```
+# apt update && apt upgrade
+# apt install -y bc linux-headers-amd64
+# git clone https://github.com/kimocoder/rtl8188eus.git
+# cd rtl8188eus
+# cp realtek_blacklist.conf /etc/modprobe.d
+# make
+# make install
+
+[Enabling Monitor Mode]
+# systemctl stop NetworkManager.service
+# iwconfig wlan0 mode monitor
+# airodump-ng wlan0
+
+[Testing Packet Injection]
+# aireplay-ng --test wlan0
+```
