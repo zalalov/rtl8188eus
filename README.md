@@ -84,6 +84,4 @@ more tba..
 # iwconfig wlan0 mode monitor
 # airodump-ng wlan0
 
-[Testing Packet Injection]
-# aireplay-ng --test wlan0
 ```
